@@ -35,6 +35,19 @@ class MyHome extends StatelessWidget {
           SizedBox(width: 20,),
         ],
       ),
-    );
+      body: Container(
+        
+        alignment: Alignment.center,
+
+        margin: EdgeInsets.only(top: 30),
+
+        decoration: BoxDecoration(
+          color: Colors.amber,
+          borderRadius: BorderRadius.circular(10.0)
+          ),
+        child: Text("ini teks"),
+        ),
+        
+      );
   }
 }
