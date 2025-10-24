@@ -16,3 +16,19 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+
+class MyHome extends StatelessWidget {
+  const MyHome({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: "iye title",
+        backgroundColor: Colors.blue,
+        
+      ),
+    );
+  }
+}
