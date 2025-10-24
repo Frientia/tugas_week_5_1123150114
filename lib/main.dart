@@ -46,6 +46,7 @@ class MyHome extends StatelessWidget {
               color: Colors.amber,
               borderRadius: BorderRadius.circular(10.0)
               ),
+            transform: Matrix4.rotationZ(0.1),
             child: Text("ini teks"),
           ),
           Container(
@@ -56,7 +57,7 @@ class MyHome extends StatelessWidget {
 
             decoration: BoxDecoration(color: Colors.amber),
             child: Text("container 2"),
-          )
+          ),
         ],
         
         ),
