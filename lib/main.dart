@@ -28,7 +28,7 @@ class MyHome extends StatelessWidget {
         title: Text("iye title"),
         backgroundColor: Colors.blue,
         actions: [
-          Icon(Icons.person, Colors: Colors.white),
+          Icon(Icons.person, color: Colors.white),
           SizedBox(width: 30,),
           Icon(Icons.account_tree),
           Icon(Icons.ac_unit),
