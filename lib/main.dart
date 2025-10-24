@@ -25,9 +25,15 @@ class MyHome extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: "iye title",
+        title: Text("iye title"),
         backgroundColor: Colors.blue,
-        
+        actions: [
+          Icon(Icons.person, Colors: Colors.white),
+          SizedBox(width: 30,),
+          Icon(Icons.account_tree),
+          Icon(Icons.ac_unit),
+          SizedBox(width: 20,),
+        ],
       ),
     );
   }
