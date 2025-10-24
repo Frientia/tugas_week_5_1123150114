@@ -35,17 +35,30 @@ class MyHome extends StatelessWidget {
           SizedBox(width: 20,),
         ],
       ),
-      body: Container(
-        
-        alignment: Alignment.center,
+      body: Column(
+        children: [
+          Container(
+            alignment: Alignment.center,
 
-        margin: EdgeInsets.only(top: 30),
+            margin: EdgeInsets.only(top: 30),
 
-        decoration: BoxDecoration(
-          color: Colors.amber,
-          borderRadius: BorderRadius.circular(10.0)
+            decoration: BoxDecoration(
+              color: Colors.amber,
+              borderRadius: BorderRadius.circular(10.0)
+              ),
+            child: Text("ini teks"),
           ),
-        child: Text("ini teks"),
+          Container(
+            width: 150,
+            height: 150,
+            alignment: Alignment.center,
+            margin: EdgeInsets.all(15),
+
+            decoration: BoxDecoration(color: Colors.amber),
+            child: Text("container 2"),
+          )
+        ],
+        
         ),
         
       );
