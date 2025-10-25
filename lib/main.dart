@@ -63,15 +63,19 @@ class MyHome extends StatelessWidget {
             ),
           ),
 
-          Container(
-            width: 150,
-            height: 150,
-            alignment: Alignment.center,
-            margin: EdgeInsets.all(15),
+          Transform.rotate(
+            angle: -5 * 3.14159 / 180,
+            child: Container(
+              width: 150,
+              height: 150,
+              alignment: Alignment.center,
+              margin: EdgeInsets.all(15),
 
-            decoration: BoxDecoration(color: Colors.amber),
-            child: Text("container 2"),
-          ),
+              decoration: BoxDecoration(color: Colors.amber),
+              child: Text("container 2"),
+            ),
+          )
+          
         ],
         
         ),
