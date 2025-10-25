@@ -36,19 +36,33 @@ class MyHome extends StatelessWidget {
         ],
       ),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
+            width: 150,
+            height: 150,
             alignment: Alignment.center,
-
-            margin: EdgeInsets.only(top: 30),
+            margin: EdgeInsets.all(14),
+            padding: EdgeInsets.all(14),
 
             decoration: BoxDecoration(
-              color: Colors.amber,
-              borderRadius: BorderRadius.circular(10.0)
-              ),
-            transform: Matrix4.rotationZ(0.1),
-            child: Text("ini teks"),
+              image: DecorationImage(
+                image: AssetImage("assets/images/default-waifu.jpg"),
+                fit: BoxFit.cover
+                ),
+                borderRadius: BorderRadius.circular(12),
+                border: Border.all(color: Colors.black, width: 2)
+            ),
+
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text("kaaaaaaaaaaaaaa")
+              ],
+            ),
           ),
+
           Container(
             width: 150,
             height: 150,
