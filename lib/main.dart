@@ -47,7 +47,7 @@ class MyHome extends StatelessWidget {
 
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage("assets/images/default-waifu.jpg"),
+                image: AssetImage("../assets/images/default-waifu.jpg"),
                 fit: BoxFit.cover
                 ),
                 borderRadius: BorderRadius.circular(12),
